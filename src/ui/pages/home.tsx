@@ -8,21 +8,17 @@ import Button from "../atoms/button";
 import LendingPoolCard from "../molecules/lendingPoolCard";
 
 const Home = () => {
-
   const lendingPoolCardData = {
-    title: 'Joe',
+    title: "Joe",
     amount: 1,
-    price: '$2.12',
-    token0TotalSupply: '$336K',
-    token1TotalSupply: '$801K',
-    token0TotalBorrowed: '$336K',
-    token1TotalBorrowed: '$801K',
-    token0Utilization: '39.25%',
-    token1Utilization: '13.15%',
-    token0SupplyAPR: '0.18%',
-    token1SupplyAPR: '0.02%',
-    token0BorrowAPR: '0.52%',
-    token1BorrowAPR: '0.18%'
+    price: "$2.12",
+    rows: [
+      { value0: "$336K", title: "TotalSupply", value1: "$801K" },
+      { value0: "$336K", title: "TotalSupply", value1: "$801K" },
+      { value0: "$336K", title: "TotalSupply", value1: "$801K" },
+      { value0: "$336K", title: "TotalSupply", value1: "$801K" },
+      { value0: "$336K", title: "TotalSupply", value1: "$801K" },
+    ],
   };
 
   return (
@@ -35,14 +31,12 @@ const Home = () => {
       </Text>
       <div className="page-home__card-group">
         <LendingPoolCard data={lendingPoolCardData} />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
+        <LendingPoolCard data={lendingPoolCardData} />
+        <LendingPoolCard data={lendingPoolCardData} />
+        <LendingPoolCard data={lendingPoolCardData} />
+        <LendingPoolCard data={lendingPoolCardData} />
+        <LendingPoolCard data={lendingPoolCardData} />
+        <LendingPoolCard data={lendingPoolCardData} />
       </div>
     </div>
   );

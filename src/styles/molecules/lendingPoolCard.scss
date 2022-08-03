@@ -1,0 +1,65 @@
+.molecule-lpcard {
+  background-color: #1E2633;
+
+  border-radius: 10px;
+  text-align: center;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__data-table {
+    padding: 2px 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    &__row{
+      background-color:#1E2633;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px;
+    }
+  }
+  &__footer{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 10px;
+    background-color: black;
+    padding: 16px;
+    border: 1px solid white;
+
+    &__title{
+
+    }
+
+    &__body{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      &__left, &__right{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+        &__circle{
+          width: 36px;
+          height: 36px;
+          background-color: yellow;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &__text{}
+      }
+      &__arrow{
+
+      }
+    }
+  }
+}
