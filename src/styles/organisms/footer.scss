@@ -1,0 +1,17 @@
+.organism-footer {
+  background-color: #000;
+  padding: 40px;
+  display: grid;
+
+  .atom-logo {
+    grid-column-start: 1;
+  }
+
+  .atom-text-paragraph {
+    grid-column-start: 2;
+  }
+
+  .molecule-socials {
+    grid-column-start: 3;
+  }
+}
