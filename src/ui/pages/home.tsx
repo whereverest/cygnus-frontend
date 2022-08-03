@@ -2,7 +2,6 @@ import React from "react";
 
 // atoms
 import Text from "../atoms/text";
-import Button from "../atoms/button";
 
 // organisms
 import LendingPoolCard from "../molecules/lendingPoolCard";

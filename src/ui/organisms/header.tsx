@@ -1,6 +1,5 @@
 import React from "react";
 
-import Text from "../atoms/text";
 import Button from "../atoms/button";
 import Logo from "../atoms/logo";
 
