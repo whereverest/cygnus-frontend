@@ -6,7 +6,7 @@ import Input from "../atoms/input";
 
 const IconInput = () => {
   return <div className="molecule-iconinput">
-    <Icon src="search-icon.png" size="small" />
+    <Icon name="search" size="small" />
     <Input placeholder="Filter pools" />
   </div>
 };

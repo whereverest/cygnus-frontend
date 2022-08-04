@@ -25,13 +25,9 @@ interface LendingPoolCardProps {
 const LPCard: React.FC<LendingPoolCardProps> = ({ data }) => {
   return (
     <div className="molecule-lpcard">
-      <div className="molecule-lpcard__header">
-        <Icon size="small" />
-        <Switch stateIndex={0} size="normal" />
-      </div>
       <Text type="subtitle">{data.title}</Text>
       <div className="molecule-lpcard__avatar">
-        <Icon size="normal" />
+        <Icon name="search" size="normal" />
       </div>
       <Text type="subtitle">{`${data.amount} (${data.price})`}</Text>
       <div className="molecule-lpcard__data-table">

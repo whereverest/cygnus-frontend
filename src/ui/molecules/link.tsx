@@ -10,7 +10,7 @@ interface LinkProps {
 const Link: React.FC<LinkProps> = ({ url }) => {
   return <div className="molecule-link">
     <a href={url} target="_blank">
-      <Icon size="normal" />
+      <Icon name="search" size="normal" />
     </a>
   </div>;
 };

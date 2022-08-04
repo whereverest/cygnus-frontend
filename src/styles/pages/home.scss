@@ -5,34 +5,25 @@
   gap: 50px;
   padding: 50px 0px;
   
-  &__stake-list {
-    &__card-group-header {
+  &__lending-pools {
+    &__header {
       display: flex;
       justify-content: space-between;
       padding: 0% 18%;
-
-      &__title {
-        display: flex;
-        justify-content: space-between;
-
-        &__switch {
-          padding-left: 20px;
-        }
-      }
     }
 
-    &__card-table{
-      padding: 0% 18%;
-      padding-top: 50px;
-      display: none;
+    // &__card-table{
+    //   padding: 0% 18%;
+    //   padding-top: 50px;
+    //   display: none;
 
-      &__header {
-        display: flex;
-        justify-content: space-between;
-      }
-    }
+    //   &__header {
+    //     display: flex;
+    //     justify-content: space-between;
+    //   }
+    // }
   
-    &__card-group{
+    &__card-view{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 20px;

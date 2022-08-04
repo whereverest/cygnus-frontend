@@ -27,10 +27,10 @@ const Switch: React.FC<SwitchProps> = ({ stateIndex, size }) => {
       }}
     >
       <div className="molecule-swtich__item">
-        <Icon size="small" />
+        <Icon name="search" size="small" />
       </div>
       <div className="molecule-swtich__item">
-        <Icon size="small" />
+        <Icon name="search" size="small" />
       </div>
       <div
         className="molecule-switch__slider"
