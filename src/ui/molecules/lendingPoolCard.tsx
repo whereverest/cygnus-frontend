@@ -2,6 +2,10 @@ import React from "react";
 
 // atoms
 import Text from "../atoms/text";
+import Icon from "../atoms/icon";
+
+// molecules
+import Switch from "../molecules/switch";
 
 interface Row {
   value0: string;
@@ -15,23 +19,20 @@ interface LendingPoolCardProps {
     amount: number;
     price: string;
     rows: Array<Row>;
-    // token0TotalSupply: string;
-    // token1TotalSupply: string;
-    // token0TotalBorrowed: string;
-    // token1TotalBorrowed: string;
-    // token0Utilization: string;
-    // token1Utilization: string;
-    // token0SupplyAPR: string;
-    // token1SupplyAPR: string;
-    // token0BorrowAPR: string;
-    // token1BorrowAPR: string;
   };
 }
 
 const LPCard: React.FC<LendingPoolCardProps> = ({ data }) => {
   return (
     <div className="molecule-lpcard">
+      <div className="molecule-lpcard__header">
+        <Icon size="small" />
+        <Switch stateIndex={0} size="normal" />
+      </div>
       <Text type="subtitle">{data.title}</Text>
+      <div className="molecule-lpcard__avatar">
+        <Icon size="normal" />
+      </div>
       <Text type="subtitle">{`${data.amount} (${data.price})`}</Text>
       <div className="molecule-lpcard__data-table">
         {data.rows.map((row, index) => {

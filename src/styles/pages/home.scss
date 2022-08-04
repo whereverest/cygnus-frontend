@@ -4,12 +4,40 @@
   flex-direction: column;
   gap: 50px;
   padding: 50px 0px;
+  
+  &__stake-list {
+    &__card-group-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0% 18%;
 
-  &__card-group{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 0% 18%;
-    padding-top: 50px;
+      &__title {
+        display: flex;
+        justify-content: space-between;
+
+        &__switch {
+          padding-left: 20px;
+        }
+      }
+    }
+
+    &__card-table{
+      padding: 0% 18%;
+      padding-top: 50px;
+      display: none;
+
+      &__header {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  
+    &__card-group{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      padding: 0% 18%;
+      padding-top: 50px;
+    }
   }
 }

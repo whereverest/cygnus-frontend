@@ -1,0 +1,37 @@
+.atom-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-large {
+    padding: 15px 10px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &-normal {
+    padding: 10px 10px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &-small {
+    padding: 5px 10px;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &-tiny {
+    padding: 2px 2px;
+    img {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

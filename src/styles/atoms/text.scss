@@ -5,6 +5,13 @@
     font-weight: bolder;
   }
 
+  &-caption {
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    align-items: flex-end;
+  }
+
   &-subtitle{
     font-size: 18px;
     font-weight: bold;
