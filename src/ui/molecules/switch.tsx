@@ -26,34 +26,18 @@ const Switch: React.FC<SwitchProps> = ({ stateIndex, size }) => {
         setSwitchState(!switchState);
       }}
     >
-      <div className="molecule-swtich__item">
-        <Icon name="search" size="small" />
-      </div>
-      <div className="molecule-swtich__item">
-        <Icon name="search" size="small" />
-      </div>
       <div
-        className="molecule-switch__slider"
-        style={{ right: switchState ? "50%" : "0%" }}
-      ></div>
-      {/* <div
-        className={[
-          "molecule-switch__item",
-          sizeClassNames[size],
-          switchIndex === 0 && "molecule-switch__item-selected",
-        ].join(" ")}
+        className="molecule-switch__container"
+        style={{ left: switchState ? "-50%" : "0%", right: switchState ? "50%" : "0%" }}
       >
-        <Icon size="small" />
+        <div className="molecule-switch__container__item">
+          <Icon name="tiles" size="small" />
+        </div>
+        <div className="molecule-switch__container__item">
+          <Icon name="lines" size="small" />
+        </div>
       </div>
-      <div
-        className={[
-          "molecule-switch__item",
-          sizeClassNames[size],
-          switchIndex === 1 && "molecule-switch__item-selected",
-        ].join(" ")}
-      >
-        <Icon size="small" />
-      </div> */}
+      <div className="molecule-switch__cover" />
     </div>
   );
 };

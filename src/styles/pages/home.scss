@@ -1,5 +1,4 @@
 .page-home {
-  background-color: #642C46;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -10,6 +9,7 @@
       display: flex;
       justify-content: space-between;
       padding: 0% 18%;
+      align-items: center;
     }
 
     // &__card-table{

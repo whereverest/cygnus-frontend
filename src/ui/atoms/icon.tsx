@@ -1,10 +1,12 @@
 import React from "react";
 
 // images
-import searchImage from "../../assets/images/search-icon.png";
+import searchImage from "../../assets/images/search.svg";
+import tilesImage from "../../assets/images/tiles.svg";
+import linesImage from "../../assets/images/lines.svg";
 
 interface IconProps {
-  name: string;
+  name: "search" | "tiles" | 'lines';
   size: "large" | "normal" | "small" | "tiny";
 }
 
@@ -17,13 +19,15 @@ const Icon: React.FC<IconProps> = ({ name, size }) => {
   };
 
   const images = {
-    search: searchImage
+    search: searchImage,
+    tiles: tilesImage,
+    lines: linesImage
   };
 
   return (
     <img
       className={["atom-icon", classNames[size]].join(" ")}
-      src={images["search"]}
+      src={images[name]}
     />
   );
 };
