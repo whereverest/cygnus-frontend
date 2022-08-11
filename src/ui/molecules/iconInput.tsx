@@ -1,14 +1,18 @@
 import React from "react";
 
-// atoms
-import Icon from "../atoms/icon";
-import Input from "../atoms/input";
+import { Box, Icon, Input } from "../atoms";
 
-const IconInput = () => {
-  return <div className="molecule-iconinput">
-    <Icon name="search" size="small" />
-    <Input placeholder="Filter pools" />
-  </div>
+interface IIconInputProps {
+    icon: string;
+}
+
+const IconInput:React.FC<IIconInputProps> = ({icon}) => {
+  return (
+    <Box>
+      <Icon src={icon} />
+      <Input />
+    </Box>
+  );
 };
 
 export default IconInput;

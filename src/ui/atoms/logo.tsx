@@ -3,15 +3,16 @@ import { useNavigate } from "react-router-dom";
 
 const Logo = () => {
   const navigate = useNavigate();
+  
   return (
-    <div
+    <img
       className="atom-logo"
       onClick={() => {
         navigate("/");
       }}
-    >
-      C Y G N U S
-    </div>
+      src=""
+      alt="logo"
+    />
   );
 };
 

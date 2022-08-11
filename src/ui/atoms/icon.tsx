@@ -1,33 +1,22 @@
 import React from "react";
 
-// images
-import searchImage from "../../assets/images/search.svg";
-import tilesImage from "../../assets/images/tiles.svg";
-import linesImage from "../../assets/images/lines.svg";
+import DIMENSION from "../../config/dimension";
 
-interface IconProps {
-  name: "search" | "tiles" | 'lines';
-  size: "large" | "normal" | "small" | "tiny";
+interface IIconProps {
+  src?: string;
+  size?: "LARGE" | "MEDIUM" | "SMALL" | "TOKEN";
 }
 
-const Icon: React.FC<IconProps> = ({ name, size }) => {
-  const classNames = {
-    large: "atom-icon-large",
-    normal: "atom-icon-normal",
-    small: "atom-icon-small",
-    tiny: "atom-icon-tiny"
-  };
-
-  const images = {
-    search: searchImage,
-    tiles: tilesImage,
-    lines: linesImage
-  };
-
+const Icon: React.FC<IIconProps> = ({ src, size = "MEDIUM" }) => {
   return (
     <img
-      className={["atom-icon", classNames[size]].join(" ")}
-      src={images[name]}
+      className="atom-icon"
+      src={src}
+      style={{
+        width: DIMENSION.ICON[size],
+        height: DIMENSION.ICON[size]
+      }}
+      alt="icon"
     />
   );
 };

@@ -1,21 +1,33 @@
 import React from "react";
 
+import DIMENSION from "../../config/dimension";
+
 interface ITextProps {
   children: string;
-  type: "title" | "caption" | "subtitle" | "paragraph" | "button";
-  center? : boolean;
+  fontSize?: "EXTRA_LARGE" | "LARGE" | "MEDIUM" | "SMALL" | "EXTRA_SMALL";
+  fontWeight?: "BOLDER" | "BOLD" | "NORMAL" | "SICK";
+  color?: string;
+  center?: boolean;
 }
 
-const Text: React.FC<ITextProps> = ({ children, type, center}) => {
-  const classNames = {
-    title: "atom-text-title",
-    subtitle: "atom-text-subtitle",
-    caption: "atom-text-caption",
-    paragraph: "atom-text-paragraph",
-    button: 'atom-text-button'
-  };
+const Text: React.FC<ITextProps> = ({
+  children,
+  fontSize = "SMALL",
+  fontWeight = "NORMAL",
+  center,
+  color = "white"
+}) => {
   return (
-    <div className={["atom-text", classNames[type], center && "atom-text-center"].join(" ")}>{children}</div>
+    <div
+      style={{
+        fontSize: DIMENSION.FONT_SIZE[fontSize],
+        fontWeight: DIMENSION.FONT_WEIGHT[fontWeight],
+        textAlign: center ? "center" : "initial",
+        color: color
+      }}
+    >
+      {children}
+    </div>
   );
 };
 
