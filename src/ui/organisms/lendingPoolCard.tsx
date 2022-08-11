@@ -31,7 +31,7 @@ const LendingPoolCard = () => {
           flexDirection="row"
           alignItems="center"
           justifyContent="center"
-          gap={Dimension.GAP.MEDIUM}
+          gap={-Dimension.GAP.MEDIUM}
         >
           <Box borderWidth={2} borderColor="red" borderRadius={100}>
             <Icon src={Icons.coin} size="TOKEN" />
