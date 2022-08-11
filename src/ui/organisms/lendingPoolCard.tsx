@@ -2,15 +2,15 @@ import React from "react";
 
 import { Box, Flex, Grid, GridItem, Text, Process, Icon } from "../atoms";
 
-import Images from "../../assets/images";
+import { Icons } from "../../assets";
 
 import Dimension from "../../config/dimension";
 
 const LendingPoolCard = () => {
   return (
     <Box
+      className="organism-lendingpoolcard"
       borderRadius={Dimension.BORDER_RADIUS.LARGE}
-      borderColor="grey"
       borderWidth={2}
       borderStyle="solid"
     >
@@ -19,24 +19,27 @@ const LendingPoolCard = () => {
           TRADER JOE
         </Text>
       </Box>
-      <Box backgroundColor="#323640" padding={Dimension.PADDING.MEDIUM}>
-        <div></div>
-      </Box>
-      <Flex
-        flexDirection="row"
-        justifyContent="center"
-        gap={Dimension.GAP.MEDIUM}
-        height={0}
-      >
-        <Box borderWidth={2} borderColor="red" borderRadius={100}>
-          <Icon src={Images.Logo} size="TOKEN" />
+      <Box className="organism-lendingpoolcard__tokens">
+        <Box backgroundColor="#323640" padding={Dimension.PADDING.MEDIUM}>
+          <div></div>
         </Box>
-        <Box borderWidth={2} borderColor="red" borderRadius={100}>
-          <Icon src={Images.Logo} size="TOKEN" />
+        <Box backgroundColor="#212529" padding={Dimension.PADDING.MEDIUM}>
+          <div></div>
         </Box>
-      </Flex>
-      <Box backgroundColor="#212529" padding={Dimension.PADDING.MEDIUM}>
-        <div></div>
+        <Flex
+          className="organism-lendingpoolcard__tokens__logos"
+          flexDirection="row"
+          alignItems="center"
+          justifyContent="center"
+          gap={Dimension.GAP.MEDIUM}
+        >
+          <Box borderWidth={2} borderColor="red" borderRadius={100}>
+            <Icon src={Icons.coin} size="TOKEN" />
+          </Box>
+          <Box borderWidth={2} borderColor="red" borderRadius={100}>
+            <Icon src={Icons.coin} size="TOKEN" />
+          </Box>
+        </Flex>
       </Box>
       <Box backgroundColor="#212529" padding={Dimension.PADDING.MEDIUM}>
         <Flex flexDirection="column" gap={Dimension.GAP.MEDIUM}>

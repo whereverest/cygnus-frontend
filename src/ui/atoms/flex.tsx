@@ -2,7 +2,7 @@ import React from "react";
 
 interface IFlexProps {
   children: JSX.Element | JSX.Element[];
-  height?: number;
+  className?: string;
   flexDirection?: "row" | "column";
   alignItems?:
     | "flex-start"
@@ -23,7 +23,7 @@ interface IFlexProps {
 
 const Flex: React.FC<IFlexProps> = ({
   children,
-  height,
+  className,
   flexDirection,
   alignItems = "initial",
   justifyContent = "initial",
@@ -31,10 +31,9 @@ const Flex: React.FC<IFlexProps> = ({
 }) => {
   return (
     <div
-      className="atom-flex"
+      className={["atom-flex", className].join(" ")}
       style={{
         display: "flex",
-        height: height!== undefined ? `${height}px` : "auto",
         flexDirection: flexDirection,
         alignItems: alignItems,
         justifyContent: justifyContent,

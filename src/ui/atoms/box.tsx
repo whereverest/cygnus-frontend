@@ -2,6 +2,7 @@ import React from "react";
 
 interface IBoxProps {
   children: JSX.Element | JSX.Element[];
+  className?: string;
   display?: "block" | "inline-block";
   borderRadius?: number;
   borderWidth?: number;
@@ -11,17 +12,17 @@ interface IBoxProps {
   paddingHorizontal?: number;
   padding?: number;
   backgroundColor?: string;
-  className?: string;
   onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 }
 
 const Box: React.FC<IBoxProps> = ({
   children,
-  display="block",
+  className,
+  display = "block",
   borderRadius = 0,
   borderWidth = 0,
   borderStyle = "solid",
-  borderColor = "#000000",
+  borderColor,
   paddingVertical = 0,
   paddingHorizontal = 0,
   padding = 0,
@@ -30,7 +31,7 @@ const Box: React.FC<IBoxProps> = ({
 }) => {
   return (
     <div
-      className="atom-box"
+      className={["atom-box", className].join(" ")}
       style={{
         display: display,
         borderRadius: borderRadius,
@@ -41,7 +42,7 @@ const Box: React.FC<IBoxProps> = ({
           ? `${padding}px`
           : `${paddingVertical}px ${paddingHorizontal}px`,
         backgroundColor: backgroundColor,
-        cursor: onClick ? "pointer" : "default",
+        // cursor: onClick ? "pointer" : "default",
         overflow: "hidden"
       }}
       onClick={onClick}
