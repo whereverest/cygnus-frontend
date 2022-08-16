@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Box, Flex, Grid, GridItem, Text } from "../atoms";
+import { Container, Flex, Grid, GridItem, Text } from "../atoms";
 import { Page } from "../molecules";
 import { LendingPoolCard } from "../organisms";
 

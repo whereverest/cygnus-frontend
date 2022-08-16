@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Flex, Container, Logo, Box, Text } from "../atoms";
-import { Button, Link } from "../molecules";
+import { Flex, Container, Box, Text } from "../atoms";
+import { Link } from "../molecules";
 
 import coinPng from "../../assets/icons/coin.png";
 

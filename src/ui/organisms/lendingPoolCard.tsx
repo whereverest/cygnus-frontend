@@ -1,10 +1,10 @@
 import React from "react";
 
-import { Box, Flex, Grid, GridItem, Text, Process, Icon } from "../atoms";
+import { Box, Flex, Grid, GridItem, Text, Process } from "../atoms";
 
 import coinPng from "../../assets/icons/coin.png";
 
-import { Icons } from "../../assets";
+// import { Icons } from "../../assets";
 
 import Dimension from "../../config/dimension";
 import TokenPair from "../molecules/tokenPair";

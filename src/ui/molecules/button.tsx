@@ -2,7 +2,7 @@ import React from "react";
 
 import { Box, Text } from "../atoms";
 
-import Dimension from "../../config/dimension";
+// import Dimension from "../../config/dimension";
 
 interface IButtonProps {
   children: string;

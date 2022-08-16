@@ -33,6 +33,13 @@ const FONT_WEIGHT = {
   SICK: 500
 };
 
+const BORDER = {
+  NONE: 0,
+  SMALL: 1,
+  MEDIUM: 2,
+  LARGE: 4,
+};
+
 const BORDER_RADIUS = {
   SMALL: 4,
   MEDIUM: 8,
@@ -45,6 +52,7 @@ const DIMENSION = {
   ICON,
   FONT_SIZE,
   FONT_WEIGHT,
+  BORDER,
   BORDER_RADIUS
 };
 
