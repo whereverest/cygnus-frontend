@@ -1,9 +1,10 @@
 import React from "react";
 
-import { Page, Container, Box, Flex, Grid, GridItem, Text } from "../atoms";
+import { Container, Box, Flex, Grid, GridItem, Text } from "../atoms";
+import { Page } from "../molecules";
 import { LendingPoolCard } from "../organisms";
 
-import Dimension from '../../config/dimension'
+import Dimension from "../../config/dimension";
 
 const Home = () => {
   return (
@@ -14,6 +15,18 @@ const Home = () => {
             Lending Pool
           </Text>
           <Grid gap={Dimension.GAP.LARGE}>
+            <GridItem columns={3}>
+              <LendingPoolCard />
+            </GridItem>
+            <GridItem columns={3}>
+              <LendingPoolCard />
+            </GridItem>
+            <GridItem columns={3}>
+              <LendingPoolCard />
+            </GridItem>
+            <GridItem columns={3}>
+              <LendingPoolCard />
+            </GridItem>
             <GridItem columns={3}>
               <LendingPoolCard />
             </GridItem>

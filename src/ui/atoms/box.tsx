@@ -1,8 +1,9 @@
 import React from "react";
 
 interface IBoxProps {
-  children: JSX.Element | JSX.Element[];
+  children?: JSX.Element | JSX.Element[];
   className?: string;
+  color?: string;
   display?: "block" | "inline-block";
   borderRadius?: number;
   borderWidth?: number;
@@ -18,6 +19,7 @@ interface IBoxProps {
 const Box: React.FC<IBoxProps> = ({
   children,
   className,
+  color = "white",
   display = "block",
   borderRadius = 0,
   borderWidth = 0,
@@ -33,6 +35,7 @@ const Box: React.FC<IBoxProps> = ({
     <div
       className={["atom-box", className].join(" ")}
       style={{
+        color: color,
         display: display,
         borderRadius: borderRadius,
         borderWidth: borderWidth,

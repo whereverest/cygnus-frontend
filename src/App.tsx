@@ -9,6 +9,7 @@ import Header from "./ui/organisms/header";
 
 // styles
 import "./styles/index.scss";
+import { Footer } from "./ui/organisms";
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

@@ -1,5 +1,10 @@
-.atom-button{
+.molecule-button{
   cursor: pointer;
+
+  &:hover {
+    filter: blur(1px);
+  }
+
   &-nav{
     position: relative;
     &:after{

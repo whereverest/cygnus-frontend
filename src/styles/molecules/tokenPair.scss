@@ -1,0 +1,16 @@
+.molecule-tokenpair {
+  // display: inline-flex !important;
+  // flex-wrap: wrap;
+  justify-content: center !important;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 65px;
+
+  &__token1 {
+  }
+
+  &__token2 {
+    margin-left: -10px;
+  }
+}

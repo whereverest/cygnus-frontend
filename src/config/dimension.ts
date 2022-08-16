@@ -15,6 +15,7 @@ const ICON = {
   MEDIUM: 8,
   LARGE: 12,
   TOKEN: 50,
+  LINK: 30,
 };
 
 const FONT_SIZE = {

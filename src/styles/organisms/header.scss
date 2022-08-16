@@ -1,11 +1,9 @@
 .organism-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px 80px;
-  &__nav{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  z-index: 100;
+  backdrop-filter:blur(10px);
+  border-bottom: 1px solid grey !important;
 }

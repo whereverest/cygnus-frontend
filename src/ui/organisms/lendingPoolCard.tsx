@@ -2,9 +2,12 @@ import React from "react";
 
 import { Box, Flex, Grid, GridItem, Text, Process, Icon } from "../atoms";
 
+import coinPng from "../../assets/icons/coin.png";
+
 import { Icons } from "../../assets";
 
 import Dimension from "../../config/dimension";
+import TokenPair from "../molecules/tokenPair";
 
 const LendingPoolCard = () => {
   return (
@@ -14,34 +17,14 @@ const LendingPoolCard = () => {
       borderWidth={2}
       borderStyle="solid"
     >
-      <Box backgroundColor="#323640" padding={Dimension.PADDING.MEDIUM}>
+      <Box backgroundColor="#212529" padding={Dimension.PADDING.MEDIUM}>
         <Text center fontSize="MEDIUM">
           TRADER JOE
         </Text>
+        <Box padding={Dimension.PADDING.MEDIUM} />
       </Box>
-      <Box className="organism-lendingpoolcard__tokens">
-        <Box backgroundColor="#323640" padding={Dimension.PADDING.MEDIUM}>
-          <div></div>
-        </Box>
-        <Box backgroundColor="#212529" padding={Dimension.PADDING.MEDIUM}>
-          <div></div>
-        </Box>
-        <Flex
-          className="organism-lendingpoolcard__tokens__logos"
-          flexDirection="row"
-          alignItems="center"
-          justifyContent="center"
-          gap={-Dimension.GAP.MEDIUM}
-        >
-          <Box borderWidth={2} borderColor="red" borderRadius={100}>
-            <Icon src={Icons.coin} size="TOKEN" />
-          </Box>
-          <Box borderWidth={2} borderColor="red" borderRadius={100}>
-            <Icon src={Icons.coin} size="TOKEN" />
-          </Box>
-        </Flex>
-      </Box>
-      <Box backgroundColor="#212529" padding={Dimension.PADDING.MEDIUM}>
+      <Box backgroundColor="#101418" padding={Dimension.PADDING.MEDIUM}>
+        <Box padding={Dimension.PADDING.MEDIUM} />
         <Flex flexDirection="column" gap={Dimension.GAP.MEDIUM}>
           <Text center fontSize="MEDIUM" fontWeight="BOLD">
             AVAX-ETH
@@ -50,19 +33,19 @@ const LendingPoolCard = () => {
             <GridItem columns={6}>
               <Flex flexDirection="column">
                 <Text color="gray">Borrow APR</Text>
-                <Text>12.45%</Text>
+                <Text fontSize="MEDIUM">12.45%</Text>
               </Flex>
             </GridItem>
             <GridItem columns={6}>
               <Flex flexDirection="column">
-                <Text color="gray">Borrow APR</Text>
-                <Text>12.45%</Text>
+                <Text color="gray">Lend APR</Text>
+                <Text fontSize="MEDIUM">12.45%</Text>
               </Flex>
             </GridItem>
           </Grid>
           <Flex flexDirection="column">
             <Text color="gray">Current Price</Text>
-            <Text>12.45$</Text>
+            <Text fontSize="MEDIUM">12.45$</Text>
           </Flex>
           <Flex flexDirection="column">
             <Flex flexDirection="row" justifyContent="space-between">
@@ -73,6 +56,7 @@ const LendingPoolCard = () => {
           </Flex>
         </Flex>
       </Box>
+      <TokenPair token1={coinPng} token2={coinPng} />
     </Box>
   );
 };

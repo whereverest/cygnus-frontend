@@ -1,2 +1,7 @@
 .molecule-link {
+  &:hover {
+    div {
+      color: grey !important;
+    }
+  }
 }

@@ -4,7 +4,7 @@ import DIMENSION from "../../config/dimension";
 
 interface IIconProps {
   src?: string;
-  size?: "LARGE" | "MEDIUM" | "SMALL" | "TOKEN";
+  size?: "LARGE" | "MEDIUM" | "SMALL" | "TOKEN" | "LINK";
 }
 
 const Icon: React.FC<IIconProps> = ({ src, size = "MEDIUM" }) => {

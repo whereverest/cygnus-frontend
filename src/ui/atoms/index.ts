@@ -7,7 +7,6 @@ import Flex from "./flex";
 import Icon from "./icon";
 import Input from "./input";
 import Text from "./text";
-import Page from "./page";
 import Process from "./process";
 
 export {
@@ -20,6 +19,5 @@ export {
   Icon,
   Input,
   Text,
-  Page,
   Process
 };
