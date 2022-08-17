@@ -2,12 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  input {
-    border: none;
-    background-color: transparent;
-    outline: none;
-    color: white;
-    font-size: 16px;
-    padding: 5px;
-  }
+  border: none;
+  background-color: transparent !important;
+  outline: none;
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
 }

@@ -16,6 +16,7 @@ const LendingPoolCard = () => {
       borderRadius={Dimension.BORDER_RADIUS.LARGE}
       borderWidth={2}
       borderStyle="solid"
+      position="relative"
     >
       <Box backgroundColor="#212529" padding={Dimension.PADDING.MEDIUM}>
         <Text center fontSize="MEDIUM">
@@ -56,7 +57,9 @@ const LendingPoolCard = () => {
           </Flex>
         </Flex>
       </Box>
-      <TokenPair token1={coinPng} token2={coinPng} />
+      <Box position="absolute" width="100%" height={55} top={65}>
+        <TokenPair token1={coinPng} token2={coinPng} />
+      </Box>
     </Box>
   );
 };
