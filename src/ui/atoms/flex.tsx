@@ -24,10 +24,9 @@ interface IFlexProps {
   flex?: number;
   backgroundColor?: string;
   paddingVertical?: number;
-  borderColor?: string;
-  borderWidth?: number;
   width?: number;
   height?: number;
+  borderTop?: string;
 }
 
 const Flex: React.FC<IFlexProps> = ({
@@ -40,10 +39,9 @@ const Flex: React.FC<IFlexProps> = ({
   backgroundColor = "transparent",
   paddingVertical = 0,
   flex = "",
-  borderColor = "white",
-  borderWidth = 0,
   width = "auto",
   height = "auto",
+  borderTop = "0px",
   gap = 0
 }) => {
   return (
@@ -59,7 +57,7 @@ const Flex: React.FC<IFlexProps> = ({
         alignItems: alignItems,
         justifyContent: justifyContent,
         borderRadius: borderRadius,
-        borderTop: `${borderWidth}px solid ${borderColor}`,
+        borderTop: borderTop,
         width: width,
         height: height,
         gap: `${gap}px`

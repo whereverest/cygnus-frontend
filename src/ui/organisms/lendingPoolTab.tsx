@@ -1,13 +1,13 @@
 import React from "react";
 
-import { Box, Flex, Grid, GridItem, Text, Process, Input } from "../atoms";
+import { Box, Flex, Text, Input } from "../atoms";
 import { Link } from "../molecules";
 
 import coinPng from "../../assets/icons/coin.png";
 
 // import { Icons } from "../../assets";
 
-import Dimension from "../../config/dimension";
+// import Dimension from "../../config/dimension";
 import TokenPair from "../molecules/tokenPair";
 import { Button } from "../molecules";
 
@@ -48,8 +48,7 @@ const LendingPoolTab = () => {
             backgroundColor="#24244A"
             paddingVertical={5}
             borderRadius={0}
-            borderColor="#6869E7"
-            borderWidth={3}
+            borderTop="3px solid #6869E7"
           >
             <Text>STAKE</Text>
           </Flex>
