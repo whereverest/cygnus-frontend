@@ -58,8 +58,6 @@ const LendingPoolTab = () => {
             backgroundColor="#101027"
             paddingVertical={5}
             borderRadius={0}
-            borderColor="#6869E7"
-            borderWidth={0}
           >
             <Text>UNSTAKE</Text>
           </Flex>
@@ -69,8 +67,6 @@ const LendingPoolTab = () => {
             backgroundColor="#101027"
             paddingVertical={5}
             borderRadius={0}
-            borderColor="#6869E7"
-            borderWidth={0}
           >
             <Text>INFO</Text>
           </Flex>
