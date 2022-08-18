@@ -14,7 +14,7 @@ import { useNavigate } from "react-router-dom";
 
 const LendingPoolTab = () => {
   const [tabViewChannel, setTabViewChannel] = useState("stake");
-  const [collapsedView, setCollapsedView] = useState(true);
+  // const [collapsedView, setCollapsedView] = useState(true);
   const navigate = useNavigate();
 
   return (
