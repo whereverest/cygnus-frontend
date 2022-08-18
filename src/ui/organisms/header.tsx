@@ -5,7 +5,12 @@ import { Button, Link } from "../molecules";
 
 const Header = () => {
   return (
-    <Box className="organism-header" paddingVertical={20} position="fixed">
+    <Box
+      className="organism-header"
+      paddingVertical={20}
+      position="fixed"
+      width="100%"
+    >
       <Container>
         <Flex
           flexDirection="row"

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // pages
 import Home from "./ui/pages/home";
+import Pool from "./ui/pages/pool";
 
 // header && footer
 import Header from "./ui/organisms/header";
@@ -17,6 +18,7 @@ const App: React.FC = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/:poolId" element={<Pool />} />
       </Routes>
       <Footer />
     </BrowserRouter>

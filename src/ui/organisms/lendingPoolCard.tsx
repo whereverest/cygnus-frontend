@@ -57,7 +57,7 @@ const LendingPoolCard = () => {
           </Flex>
         </Flex>
       </Box>
-      <Box position="absolute" width="100%" height={55} top={65}>
+      <Box position="absolute" width="100%" height="55px" top={65}>
         <Flex justifyContent="center">
           <TokenPair token1={coinPng} token2={coinPng} />
         </Flex>

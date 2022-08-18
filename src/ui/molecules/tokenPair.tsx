@@ -7,13 +7,13 @@ interface ITokenPairProps {
   token2: string;
 }
 
-const TokenPair:React.FC<ITokenPairProps> = ({token1, token2}) => {
+const TokenPair: React.FC<ITokenPairProps> = ({ token1, token2 }) => {
   return (
-    <Flex className="molecule-tokenpair">
-      <Box className="molecule-tokenpair__token1">
+    <Flex justifyContent="center" backgroundColor="transparent">
+      <Box>
         <Icon size="TOKEN" src={token1} border="MEDIUM" />
       </Box>
-      <Box className="molecule-tokenpair__token2">
+      <Box marginLeft="-10px">
         <Icon size="TOKEN" src={token2} border="MEDIUM" />
       </Box>
     </Flex>

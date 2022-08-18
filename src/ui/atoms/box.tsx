@@ -5,6 +5,10 @@ interface IBoxProps {
   className?: string;
   color?: string;
   display?: "block" | "inline-block" | "flex";
+  borderTop?: string;
+  borderLeft?: string;
+  borderRight?: string;
+  borderBottom?: string;
   borderRadius?: number;
   borderWidth?: number;
   borderStyle?: "solid" | "dashed";
@@ -14,8 +18,10 @@ interface IBoxProps {
   padding?: number;
   backgroundColor?: string;
   width?: string;
-  height?: number;
+  height?: string;
+  marginLeft?: string;
   top?: number;
+  left?: number;
   position?: "static" | "absolute" | "relative" | "fixed" | "sticky";
   onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 }
@@ -27,6 +33,10 @@ const Box: React.FC<IBoxProps> = ({
   width = "auto",
   height = "auto",
   display = "block",
+  borderTop = "1px solid transparent",
+  borderLeft = "1px solid transparent",
+  borderRight = "1px solid transparent",
+  borderBottom = "1px solid transparent",
   borderRadius = 0,
   borderWidth = 0,
   borderStyle = "solid",
@@ -35,8 +45,10 @@ const Box: React.FC<IBoxProps> = ({
   paddingHorizontal = 0,
   padding = 0,
   position = "static",
+  marginLeft = "0",
   backgroundColor = "transparent",
   top = "auto",
+  left = "auto",
   onClick
 }) => {
   return (
@@ -48,11 +60,17 @@ const Box: React.FC<IBoxProps> = ({
         width: width,
         height: height,
         position: position,
-        borderRadius: borderRadius,
         borderWidth: borderWidth,
         borderStyle: borderStyle,
         borderColor: borderColor,
+        borderTop: borderTop,
+        borderLeft: borderLeft,
+        borderRight: borderRight,
+        borderBottom: borderBottom,
+        borderRadius: borderRadius,
         top: top,
+        left: left,
+        marginLeft: marginLeft,
         padding: padding
           ? `${padding}px`
           : `${paddingVertical}px ${paddingHorizontal}px`,

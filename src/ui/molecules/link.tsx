@@ -10,7 +10,11 @@ interface ILinkProps {
   onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 }
 
-const Link: React.FC<ILinkProps> = ({ children = "", iconSrc = "", onClick }) => {
+const Link: React.FC<ILinkProps> = ({
+  children = "",
+  iconSrc = "",
+  onClick,
+}) => {
   return (
     <Box onClick={onClick} color="#FFFFFF70" className="molecule-link">
       <Text fontSize="SMALL">{children}</Text>

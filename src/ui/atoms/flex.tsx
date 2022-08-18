@@ -24,7 +24,7 @@ interface IFlexProps {
   flex?: number;
   backgroundColor?: string;
   paddingVertical?: number;
-  width?: number;
+  width?: string;
   height?: number;
   borderTop?: string;
 }
@@ -35,7 +35,7 @@ const Flex: React.FC<IFlexProps> = ({
   flexDirection,
   alignItems = "",
   justifyContent = "",
-  borderRadius = 10,
+  borderRadius = 5,
   backgroundColor = "transparent",
   paddingVertical = 0,
   flex = "",
