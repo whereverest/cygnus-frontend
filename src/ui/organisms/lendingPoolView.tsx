@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Box, Flex, Text, Input, Icon } from "../atoms";
+import { Box, Flex, Text, Icon } from "../atoms";
 import { Link } from "../molecules";
 
 import coinPng from "../../assets/icons/coin.png";
@@ -10,12 +10,10 @@ import coinPng from "../../assets/icons/coin.png";
 // import Dimension from "../../config/dimension";
 import TokenPair from "../molecules/tokenPair";
 import { Button } from "../molecules";
-import { useNavigate } from "react-router-dom";
 
 const LendingPoolView = () => {
   const [tabViewChannel, setTabViewChannel] = useState("borrow");
   // const [collapsedView, setCollapsedView] = useState(true);
-  const navigate = useNavigate();
 
   return (
     <Box className="organism-lendingpooltab">
