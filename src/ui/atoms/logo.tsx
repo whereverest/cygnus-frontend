@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import coinPng from "../../assets/icons/coin.png";
+import logoPng from "../../assets/icons/logo.png";
 
 const Logo = () => {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ const Logo = () => {
       onClick={() => {
         navigate("/");
       }}
-      src={coinPng}
+      src={logoPng}
       alt="logo"
     />
   );

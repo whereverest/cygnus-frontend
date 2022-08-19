@@ -5,41 +5,12 @@
   box-sizing: border-box;
 
   &:hover {
-    // filter: blur(1px);
     border: 2px solid white !important;
   }
 
-  &-nav{
-    position: relative;
-    &:after{
-      content: "";
-      width: 0%;
-      position: absolute;
-      height: 2px;
-      background-color: red;
-      transition: 0.3s;
-    }
-
-    &:hover:after{
-      width: 100%;
-    }
-  }
-
-  &-normal{
-    border: 2px solid #A63738;
-    border-radius: 4px;
-    padding: 5px 40px 5px 40px;
-  }
-
-  &-connect{
-    border: 2px solid red;
-    border-radius: 5px;
-    padding: 4px 30px;
-    transition: 0.5s;
-    background-color: transparent;
-
-    &:hover{
-      background-color: red;
+  &-noborder {
+    &:hover {
+      border: 2px solid transparent !important;
     }
   }
 }

@@ -19,7 +19,8 @@ const LendingPoolTab = () => {
 
   return (
     <Box className="organism-lendingpooltab">
-      <Box padding={15} position="relative">
+      <Box padding={15} position="relative" onClick={() => {navigate("/1")}}>
+          {/* onClick={() => {setCollapsedView(!collapsedView)}} */}
         <Flex justifyContent="space-between" alignItems="center">
           <Box position="absolute" top={7} width="100px" height="55px">
             <TokenPair token1={coinPng} token2={coinPng} />
@@ -42,19 +43,7 @@ const LendingPoolTab = () => {
             <Text>TVL</Text>
             <Text>$4.2M</Text>
           </Flex>
-          <Link iconSrc={coinPng} />
         </Flex>
-        <Box position="absolute" width="100%" height="100%" top={0} left={0}>
-          {/* <Button height="100%" onClick={() => {setCollapsedView(!collapsedView)}}>{""}</Button> */}
-          <Button
-            height="98.8%"
-            onClick={() => {
-              navigate("/1");
-            }}
-          >
-            {""}
-          </Button>
-        </Box>
       </Box>
       {/* <Box height={collapsedView ? "0px" : "200px"}> */}
       <Box height="0px">

@@ -27,6 +27,7 @@ interface IFlexProps {
   width?: string;
   height?: number;
   borderTop?: string;
+  position?: "static" | "relative" | "absolute" | "sticky" | "fixed";
 }
 
 const Flex: React.FC<IFlexProps> = ({
@@ -42,7 +43,8 @@ const Flex: React.FC<IFlexProps> = ({
   width = "auto",
   height = "auto",
   borderTop = "0px",
-  gap = 0
+  gap = 0,
+  position = "static",
 }) => {
   return (
     <div
@@ -60,7 +62,8 @@ const Flex: React.FC<IFlexProps> = ({
         borderTop: borderTop,
         width: width,
         height: height,
-        gap: `${gap}px`
+        gap: `${gap}px`,
+        position: position,
       }}
     >
       {children}

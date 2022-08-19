@@ -8,8 +8,10 @@ import coinPng from "../../assets/icons/coin.png";
 
 import Dimension from "../../config/dimension";
 import TokenPair from "../molecules/tokenPair";
+import { useNavigate } from "react-router-dom";
 
 const LendingPoolCard = () => {
+  const navigate = useNavigate();
   return (
     <Box
       className="organism-lendingpoolcard"
@@ -17,6 +19,7 @@ const LendingPoolCard = () => {
       borderWidth={2}
       borderStyle="solid"
       position="relative"
+      onClick={() => {navigate("/1")}}
     >
       <Box backgroundColor="#212529" padding={Dimension.PADDING.MEDIUM}>
         <Text center fontSize="MEDIUM">

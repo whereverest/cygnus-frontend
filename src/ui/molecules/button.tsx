@@ -9,7 +9,9 @@ interface IButtonProps {
   backgroundColor?: string;
   color?: string;
   padding?: number;
+  width?: string;
   height?: string;
+  className?: string;
   onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 }
 
@@ -18,16 +20,19 @@ const Button: React.FC<IButtonProps> = ({
   backgroundColor,
   color,
   padding = 15,
+  width = "auto",
   height = "auto",
+  className = "",
   onClick,
 }) => {
   return (
     <Box
       onClick={onClick}
-      className="molecule-button"
+      className={["molecule-button", className].join(" ")}
       backgroundColor={backgroundColor}
       padding={padding}
       borderRadius={5}
+      width={width}
       height={height}
     >
       <Text fontSize="SMALL" color={color} center>
