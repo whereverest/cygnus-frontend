@@ -13,9 +13,10 @@ const PADDING = {
 const ICON = {
   SMALL: 4,
   MEDIUM: 8,
-  LARGE: 12,
+  LARGE: 24,
   TOKEN: 50,
   LINK: 30,
+  EXTRA_LARGE: 120,
 };
 
 const FONT_SIZE = {

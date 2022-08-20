@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import { Flex, Container, Logo, Box } from "../atoms";
 import { Button, Link } from "../molecules";
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <Box
       className="organism-header"
@@ -24,7 +26,7 @@ const Header = () => {
             justifyContent="space-between"
             gap={30}
           >
-            <Link>PRODUCTS</Link>
+            <Link onClick={() => {navigate("/stake")}}>STAKING</Link>
             <Link>PORTFOLIO</Link>
             <Link>GOVERNANCE</Link>
           </Flex>

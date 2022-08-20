@@ -4,7 +4,7 @@ import DIMENSION from "../../config/dimension";
 
 interface IIconProps {
   src?: string;
-  size?: "LARGE" | "MEDIUM" | "SMALL" | "TOKEN" | "LINK";
+  size?: "LARGE" | "MEDIUM" | "SMALL" | "TOKEN" | "LINK" | "EXTRA_LARGE";
   border?: "NONE" | "SMALL" | "MEDIUM" | "LARGE";
 }
 

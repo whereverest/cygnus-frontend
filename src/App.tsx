@@ -11,6 +11,7 @@ import Header from "./ui/organisms/header";
 // styles
 import "./styles/index.scss";
 import { Footer } from "./ui/organisms";
+import Stake from "./ui/pages/stake";
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/stake" element={<Stake />} />
         <Route path="/:poolId" element={<Pool />} />
       </Routes>
       <Footer />
