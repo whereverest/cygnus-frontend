@@ -1,19 +1,15 @@
 import React from "react";
 
-import { Box, Flex, Grid, GridItem, Text, Process, Icon } from "../atoms";
+import { Box, Flex, Grid, GridItem, Text, Icon } from "../atoms";
 
 import coinPng from "../../assets/icons/coin.png";
 import logoPng from "../../assets/icons/logo.png";
 
 // import { Icons } from "../../assets";
 
-import Dimension from "../../config/dimension";
-import TokenPair from "../molecules/tokenPair";
-import { useNavigate } from "react-router-dom";
 import { Button } from "../molecules";
 
 const StakeCard = () => {
-  const navigate = useNavigate();
   return (
     <Flex flexDirection="row" justifyContent="center">
       <Box
