@@ -17,7 +17,7 @@ const Header = () => {
       deactivate();
     } else {
       const metamaskConnector = new InjectedConnector({
-        supportedChainIds: [1],
+        supportedChainIds: [43113, 43114],
       });
       activate(metamaskConnector);
     }
