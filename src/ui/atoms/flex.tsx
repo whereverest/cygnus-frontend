@@ -25,7 +25,7 @@ interface IFlexProps {
   backgroundColor?: string;
   paddingVertical?: number;
   width?: string;
-  height?: number;
+  height?: string;
   borderTop?: string;
   position?: "static" | "relative" | "absolute" | "sticky" | "fixed";
 }
